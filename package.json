@@ -1,0 +1,20 @@
+{
+  "name": "lunch-and-learn-site",
+  "version": "0.1.0",
+  "description": "A site, built using Middleman, to provide information on upcoming, and past, Lunch and Learn sessions.",
+  "scripts": {
+    "commitmsg": "commitlint --edit",
+    "test": "commitlint --from=develop --to=HEAD"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^5.2.5",
+    "@dwp-standard-config/commitlint-config-base": "git+ssh://git@gitlab.itsshared.net:house-style/commitlint-config-base.git#develop",
+    "husky": "^0.14.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.itsshared.net:mike.shaw/lunch-and-learn-site.git"
+  },
+  "author": "Mike Shaw <mike.shaw@dwp.gsi.gov.uk>",
+  "license": "ISC"
+}
