@@ -5,6 +5,8 @@ cache:
   - vendor
 
 test:
+  tags:
+    - docker
   script:
   - bundle install --path vendor
   - bundle exec middleman build
@@ -12,6 +14,8 @@ test:
     - master
 
 pages:
+  tags:
+    - docker
   script:
   - bundle install --path vendor
   - bundle exec middleman build
