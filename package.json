@@ -7,7 +7,7 @@
     "test": "commitlint --from=develop --to=HEAD"
   },
   "devDependencies": {
-    "@commitlint/cli": "^5.2.5",
+    "@commitlint/cli": "^5.2.8",
     "@dwp-standard-config/commitlint-config-base": "git+ssh://git@gitlab.itsshared.net:house-style/commitlint-config-base.git#develop",
     "husky": "^0.14.3"
   },
