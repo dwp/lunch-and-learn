@@ -74,8 +74,8 @@ If you wish to be notified of new lunch and learn sessions, the best way at the 
 
 ### I want to present something
 
-If you wish to submit an idea for a lunch and learn, please contact Robin Sillem on Slack or by email.
+Great! Submit a pull request to add the details of when and where, and we'll get it added. Please ensure you have a room booked out before opening a pull request.
 
 ### I have something I'd like to learn
 
-No problem! Contact Robin Sillem, on Slack or by email, with what you'd like to learn about. We'll put out a call for anyone who could present on that topic.
+We're always open to ideas, and calling out what you'd like to learn is a great start! Open an issue in the repository for the community to review, and watch the repo for a pull request regarding your topic.
