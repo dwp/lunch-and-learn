@@ -1,8 +1,8 @@
 # Lunch and Learn Directory
 
-The aim of this directory is to provide information on upcoming, and past, lunch and learn sessions. This will be as up to date as possible, but we cannot guarantee it.
+The aim of this directory is to provide information on upcoming, and previous, lunch and learn sessions. This will be as up to date as possible, but we cannot guarantee it.
 
-## Upcoming
+## Upcoming sessions
 
 This section lists upcoming lunch and learn sessions.
 
@@ -25,7 +25,7 @@ This section lists upcoming lunch and learn sessions.
   </tbody>
 </table>
 
-## Previous
+## Previous sessions
 
 This section lists previous lunch and learn sessions. Where possible we will include links to resources, provided by the presenter.
 
