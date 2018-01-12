@@ -4,16 +4,18 @@
   "description": "A site, built using Middleman, to provide information on upcoming, and past, Lunch and Learn sessions.",
   "scripts": {
     "commitmsg": "commitlint --edit",
+    "precommit": "lint-staged",
     "security-tests": "npm run security:outdated && npm run security:nsp",
-    "security:nsp": "nsp check",
+    "security:nsp": "nsp check #",
     "security:outdated": "npm outdated || true",
     "security:snyk": "snyk test -dev",
     "test": "commitlint --from=develop --to=HEAD"
   },
   "devDependencies": {
     "@commitlint/cli": "^5.2.8",
-    "@dwp-standard-config/commitlint-config-base": "git+ssh://git@gitlab.itsshared.net:house-style/commitlint-config-base.git#develop",
+    "@dwp/commitlint-config-base": "git+ssh://git@gitlab.itsshared.net:house-style/commitlint-config-base.git#develop",
     "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "nsp": "^3.1.0",
     "snyk": "^1.64.0"
   },
