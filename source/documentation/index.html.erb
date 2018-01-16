@@ -1,8 +1,27 @@
 <% today = Date.today.strftime('%Y%m%d') %>
+<% current = '' %>
 
 # Lunch and Learn Directory
 
 The aim of this directory is to provide information on upcoming, and previous, lunch and learn sessions. This will be as up to date as possible, but we cannot guarantee it.
+
+<% data.sessions.sessions.each do |session| %>
+  <% if today == Date.parse(session.date).strftime('%Y%m%d') %>
+    <% current = session %>
+  <% end %>
+<% end %>
+
+<% if current != '' %>
+  <section class="c-current-session">
+    <h2 id="todays-session" class="c-current-session__title">Today's Session</h2>
+    <p>
+      Service Workers<br>
+      Mike Shaw<br>
+      13:00 - 14:00<br>
+      BPV Redwood
+    </p>
+  </section>
+<% end %>
 
 ## Upcoming sessions
 
@@ -19,7 +38,7 @@ This section lists upcoming lunch and learn sessions.
   </thead>
   <tbody>
     <% data.sessions.sessions.each do |session| %>
-      <% if today <= Date.parse(session.date).strftime('%Y%m%d') %>
+      <% if today < Date.parse(session.date).strftime('%Y%m%d') %>
         <tr>
           <th scope="row"><%= session.title %></th>
           <td><%= session.presenter %></td>
