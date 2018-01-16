@@ -1,3 +1,5 @@
+<% today = Date.today.strftime('%Y%m%d') %>
+
 # Lunch and Learn Directory
 
 The aim of this directory is to provide information on upcoming, and previous, lunch and learn sessions. This will be as up to date as possible, but we cannot guarantee it.
@@ -16,12 +18,16 @@ This section lists upcoming lunch and learn sessions.
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">Service Workers</th>
-      <td>Mike Shaw</td>
-      <td class="numeric">12/01/2018<br>12:00 - 13:00</td>
-      <td>BPV, Redwood</td>
-    </tr>
+    <% data.sessions.sessions.each do |session| %>
+      <% if today <= Date.parse(session.date).strftime('%Y%m%d') %>
+        <tr>
+          <th scope="row"><%= session.title %></th>
+          <td><%= session.presenter %></td>
+          <td class="numeric"><%= Date.parse(session.date).strftime('%d/%m/%Y') %><br><%= session.time.start %> - <%= session.time.end %></td>
+          <td><%= session.location %></td>
+        </tr>
+      <% end %>
+    <% end %>
   </tbody>
 </table>
 
@@ -39,30 +45,16 @@ This section lists previous lunch and learn sessions. Where possible we will inc
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">Clojure</th>
-      <td>Chris Howe-Jones</td>
-      <td class="numeric">20/12/2017<br>12:00 - 13:00</td>
-      <td>BPV9052 Cypress</td>
-    </tr>
-    <tr>
-      <th scope="row">Secure Coding: Injection</th>
-      <td>Robin Sillem</td>
-      <td class="numeric">13/12/2017<br>12:00 - 13:00</td>
-      <td>Academy Classroom 2, BPV9</td>
-    </tr>
-    <tr>
-      <th scope="row">Blockchain</th>
-      <td>Alex Stanhope</td>
-      <td class="numeric">06/12/2017<br>12:00 - 13:00</td>
-      <td>BPV9052 Willow</td>
-    </tr>
-    <tr>
-      <th scope="row">Security: SSL and Akamai</th>
-      <td>Aswini Dasika</td>
-      <td class="numeric">29/11/2017<br>12:00 - 13:00</td>
-      <td>BPV9052 Cedar</td>
-    </tr>
+    <% data.sessions.sessions.each do |session| %>
+      <% if today > Date.parse(session.date).strftime('%Y%m%d') %>
+        <tr>
+          <th scope="row"><%= session.title %></th>
+          <td><%= session.presenter %></td>
+          <td class="numeric"><%= Date.parse(session.date).strftime('%d/%m/%Y') %><br><%= session.time.start %> - <%= session.time.end %></td>
+          <td><%= session.location %></td>
+        </tr>
+      <% end %>
+    <% end %>
   </tbody>
 </table>
 
