@@ -1,7 +1,14 @@
 sessions:
+  - title: "Interaction Design"
+    presenter: "Craig Abbott"
+    date: "20180123"
+    time:
+      start: "13:00"
+      end: "14:00"
+    location: "BPV, Redwood"
   - title: "Service Workers"
     presenter: "Mike Shaw"
-    date: "20180116"
+    date: "20180117"
     time:
       start: "13:00"
       end: "14:00"

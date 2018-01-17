@@ -1,13 +1,25 @@
 <% today = Date.today.strftime('%Y%m%d') %>
 <% current = '' %>
+<% upcoming = [] %>
+<% previous = [] %>
 
 <h1 id="lunch-and-learn-directory">Lunch and Learn Directory</h1>
 
 The aim of this directory is to provide information on upcoming, and previous, lunch and learn sessions. This will be as up to date as possible, but we cannot guarantee it.
 
 <% data.sessions.sessions.each do |session| %>
-  <% if today == Date.parse(session.date).strftime('%Y%m%d') %>
+  <% sessionDate = Date.parse(session.date).strftime('%Y%m%d') %>
+
+  <% if today == sessionDate %>
     <% current = session %>
+  <% end %>
+
+  <% if today < sessionDate %>
+    <% upcoming.push(session) %>
+  <% end %>
+
+  <% if today > sessionDate %>
+    <% previous.push(session) %>
   <% end %>
 <% end %>
 
@@ -27,18 +39,20 @@ The aim of this directory is to provide information on upcoming, and previous, l
 
 This section lists upcoming lunch and learn sessions.
 
-<table>
-  <thead>
-    <tr>
-      <th scope="col">Subject</th>
-      <th scope="col">By</th>
-      <th class="numeric" scope="col">When</th>
-      <th scope="col">Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% data.sessions.sessions.each do |session| %>
-      <% if today < Date.parse(session.date).strftime('%Y%m%d') %>
+<% if upcoming.empty? %>
+  **We currently have no upcoming sessions scheduled.**
+<% else %>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Subject</th>
+        <th scope="col">By</th>
+        <th class="numeric" scope="col">When</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% upcoming.each do |session| %>
         <tr>
           <th scope="row"><%= session.title %></th>
           <td><%= session.presenter %></td>
@@ -46,26 +60,26 @@ This section lists upcoming lunch and learn sessions.
           <td><%= session.location %></td>
         </tr>
       <% end %>
-    <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+<% end %>
 
 ## Previous sessions
 
 This section lists previous lunch and learn sessions. Where possible we will include links to resources, provided by the presenter.
 
-<table>
-  <thead>
-    <tr>
-      <th scope="col">Subject</th>
-      <th scope="col">By</th>
-      <th class="numeric" scope="col">When</th>
-      <th scope="col">Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% data.sessions.sessions.each do |session| %>
-      <% if today > Date.parse(session.date).strftime('%Y%m%d') %>
+<% if not previous.empty? %>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Subject</th>
+        <th scope="col">By</th>
+        <th class="numeric" scope="col">When</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% previous.each do |session| %>
         <tr>
           <th scope="row"><%= session.title %></th>
           <td><%= session.presenter %></td>
@@ -73,9 +87,9 @@ This section lists previous lunch and learn sessions. Where possible we will inc
           <td><%= session.location %></td>
         </tr>
       <% end %>
-    <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+<% end %>
 
 ## Get Notified
 
