@@ -20,9 +20,16 @@ sessions:
       start: "12:00"
       end: "13:00"
     location: "BPV9052 Willow"
+  - title: "Scaling Scrum"
+    presenter: "Stephen Moretti"
+    date: "20171122"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052"
   - title: "Security: SSL and Akamai"
     presenter: "Aswini Dasika"
-    date: "20171129"
+    date: "20171122"
     time:
       start: "12:00"
       end: "13:00"
