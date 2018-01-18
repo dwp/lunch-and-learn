@@ -33,3 +33,7 @@ Each session object should following this format:
       end: "14:00"
     location: "Where it is taking place"
 ```
+
+# Contributing
+
+If you would like to contribute to the project, or simply add a lunch and learn session, you should make your changes on a feature branch (`feature/my-branch-name`). Once ready, create a merge request targetting the `develop` branch. Once approved, the approver will merge the changes and push to `master` as appropriate.
