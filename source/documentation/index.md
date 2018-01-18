@@ -6,27 +6,71 @@ The aim of this directory is to provide information on upcoming, and past, lunch
 
 This section lists upcoming lunch and learn sessions.
 
-Subject         | By        | When                         | Location
---------------- | --------- | ---------------------------- | ------------
-Service Workers | Mike Shaw | 12/01/2018<br>
-12:00 - 13:00 | BPV, Redwood
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Subject</th>
+      <th scope="col">By</th>
+      <th class="numeric" scope="col">When</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Service Workers</th>
+      <td>Mike Shaw</td>
+      <td class="numeric">12/01/2018<br>12:00 - 13:00</td>
+      <td>BPV, Redwood</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Previous
 
 This section lists previous lunch and learn sessions. Where possible we will include links to resources, provided by the presenter.
 
-Subject                  | By               | When                         | Location
------------------------- | ---------------- | ---------------------------- | -------------------------
-Clojure                  | Chris Howe-Jones | 20/12/2017<br>
-12:00 - 13:00 | BPV9052 Cypress
-Secure Coding: Injection | Robin Sillem     | 13/12/2017<br>
-12:00 - 13:00 | Academy Classroom 2, BPV9
-Blockchain               | Alex Stanhope    | 06/12/2017<br>
-12:00 - 13:00 | BPV9052 Willow
-Scaling Scrum            | Stephen Moretti  | 22/11/2017<br>
-12:00 - 13:00 | BPV9052
-Security: SSL and Akamai | Aswini Dasika    | 22/11/2017<br>
-12:00 - 13:00 | BPV9052 Cedar
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Subject</th>
+      <th scope="col">By</th>
+      <th class="numeric" scope="col">When</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Clojure</th>
+      <td>Chris Howe-Jones</td>
+      <td class="numeric">20/12/2017<br>12:00 - 13:00</td>
+      <td>BPV9052 Cypress</td>
+    </tr>
+    <tr>
+      <th scope="row">Secure Coding: Injection</th>
+      <td>Robin Sillem</td>
+      <td class="numeric">13/12/2017<br>12:00 - 13:00</td>
+      <td>Academy Classroom 2, BPV9</td>
+    </tr>
+    <tr>
+      <th scope="row">Blockchain</th>
+      <td>Alex Stanhope</td>
+      <td class="numeric">06/12/2017<br>12:00 - 13:00</td>
+      <td>BPV9052 Willow</td>
+    </tr>
+    <tr>
+      <th scope="row">Scaling Scrum</th>
+      <td>Stephen Moretti</td>
+      <td class="numeric">22/11/2017<br>12:00 - 13:00</td>
+      <td>BPV9052</td>
+    </tr>
+    <tr>
+      <th scope="row">Security: SSL and Akamai</th>
+      <td>Aswini Dasika</td>
+      <td class="numeric">22/11/2017<br>12:00 - 13:00</td>
+      <td>BPV9052 Cedar</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Get Notified
 
