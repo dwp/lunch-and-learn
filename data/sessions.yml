@@ -1,0 +1,29 @@
+sessions:
+  - title: "Clojure"
+    presenter: "Chris Howe-Jones"
+    date: "20171220"
+    time:
+      start: "13:00"
+      end: "14:00"
+    location: "BPV9052 Cypress"
+  - title: "Secure Coding: Injection"
+    presenter: "Robin Sillem"
+    date: "20171213"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "Academy Classroom 2, BPV9"
+  - title: "Blockchain"
+    presenter: "Alex Stanhope"
+    date: "20171206"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052 Willow"
+  - title: "Security: SSL and Akamai"
+    presenter: "Aswini Dasika"
+    date: "20171129"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052 Cedar"

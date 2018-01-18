@@ -1,1 +1,1 @@
-module.exports = require( '@dwp-standard-config/commitlint-config-base' );
+module.exports = require('@dwp/commitlint-config-base');

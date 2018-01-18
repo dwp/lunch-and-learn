@@ -1,0 +1,106 @@
+<% today = Date.today.strftime('%Y%m%d') %>
+<% current = '' %>
+<% upcoming = [] %>
+<% previous = [] %>
+
+<h1 id="lunch-and-learn-directory">Lunch and Learn Directory</h1>
+
+The aim of this directory is to provide information on upcoming, and previous, lunch and learn sessions. This will be as up to date as possible, but we cannot guarantee it.
+
+<% data.sessions.sessions.each do |session| %>
+  <% sessionDate = Date.parse(session.date).strftime('%Y%m%d') %>
+
+  <% if today == sessionDate %>
+    <% current = session %>
+  <% end %>
+
+  <% if today < sessionDate %>
+    <% upcoming.push(session) %>
+  <% end %>
+
+  <% if today > sessionDate %>
+    <% previous.push(session) %>
+  <% end %>
+<% end %>
+
+<% if current != '' %>
+  <section class="c-current-session">
+    <h2 id="todays-session" class="c-current-session__title">Today's Session</h2>
+    <p>
+      Service Workers<br>
+      Mike Shaw<br>
+      13:00 - 14:00<br>
+      BPV Redwood
+    </p>
+  </section>
+<% end %>
+
+## Upcoming sessions
+
+This section lists upcoming lunch and learn sessions.
+
+<% if upcoming.empty? %>
+  **Currently, there are no upcoming sessions scheduled.**
+<% else %>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Subject</th>
+        <th scope="col">By</th>
+        <th class="numeric" scope="col">When</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% upcoming.each do |session| %>
+        <tr>
+          <th scope="row"><%= session.title %></th>
+          <td><%= session.presenter %></td>
+          <td class="numeric"><%= Date.parse(session.date).strftime('%d/%m/%Y') %><br><%= session.time.start %> - <%= session.time.end %></td>
+          <td><%= session.location %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+## Previous sessions
+
+This section lists previous lunch and learn sessions. Where possible we will include links to resources, provided by the presenter.
+
+<% if not previous.empty? %>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Subject</th>
+        <th scope="col">By</th>
+        <th class="numeric" scope="col">When</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% previous.each do |session| %>
+        <tr>
+          <th scope="row"><%= session.title %></th>
+          <td><%= session.presenter %></td>
+          <td class="numeric"><%= Date.parse(session.date).strftime('%d/%m/%Y') %><br><%= session.time.start %> - <%= session.time.end %></td>
+          <td><%= session.location %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+## Get Notified
+
+If you wish to be notified of new lunch and learn sessions, the best way at the moment is to watch the repo for this site for changes.
+
+## Submit an idea
+
+### I want to present something
+
+Great! Submit a pull request to add the details of when and where, and we'll get it added. Please ensure you have a room booked out before opening a pull request.
+
+### I have something I'd like to learn
+
+We're always open to ideas, and calling out what you'd like to learn is a great start! Open an issue in the repository for the community to review, and watch the repo for a pull request regarding your topic.

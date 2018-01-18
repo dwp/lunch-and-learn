@@ -4,7 +4,7 @@ host:
 # Header-related options
 show_govuk_logo: true
 service_name: Lunch and Learns
-service_link: https://lunch-and-learn.service.gov.uk
+service_link: /lunch-and-learns
 phase: Alpha
 
 # Links to show on right-hand-side of header
