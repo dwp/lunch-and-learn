@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^5.2.8",
-    "@dwp/commitlint-config-base": "git+ssh://git@gitlab.itsshared.net:house-style/commitlint-config-base.git#develop",
+    "@dwp/commitlint-config-base": "1.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "nsp": "^3.1.0",
