@@ -51,7 +51,7 @@ end
 
 configure :build do
   set :build_dir, 'public'
-  set :base_url, 'lunch-and-learns'
+  set :base_url, 'lunch-and-learn'
   activate :relative_assets
   activate :minify_css
   activate :minify_javascript
