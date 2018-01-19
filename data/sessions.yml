@@ -1,4 +1,11 @@
 sessions:
+  - title: "Secure Coding: Cross-site scripting"
+    presenter: "Robin Sillem"
+    date: "20180207"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052 Willow"
   - title: "Clojure"
     presenter: "Chris Howe-Jones"
     date: "20171220"
