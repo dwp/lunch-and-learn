@@ -27,10 +27,10 @@ The aim of this directory is to provide information on upcoming, and previous, l
   <section class="c-current-session">
     <h2 id="todays-session" class="c-current-session__title">Today's Session</h2>
     <p>
-      Service Workers<br>
-      Mike Shaw<br>
-      13:00 - 14:00<br>
-      BPV Redwood
+      <%= current.title %><br>
+      <%= current.presenter %><br>
+      <%= current.time.start %> - <%= current.time.end %><br>
+      <%= current.location %>
     </p>
   </section>
 <% end %>
