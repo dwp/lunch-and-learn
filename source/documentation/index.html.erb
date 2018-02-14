@@ -52,7 +52,7 @@ This section lists upcoming lunch and learn sessions.
       </tr>
     </thead>
     <tbody>
-      <% upcoming.each do |session| %>
+      <% upcoming.reverse.each do |session| %>
         <tr>
           <th scope="row"><%= session.title %></th>
           <td><%= session.presenter %></td>
