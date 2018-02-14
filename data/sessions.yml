@@ -1,4 +1,32 @@
 sessions:
+  - title: "TechNow"
+    presenter: "John Judd"
+    date: "20180313"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052 Willow"
+  - title: "General Data Protection Regulation"
+    presenter: "Michael Bell"
+    date: "20180307"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052 Willow"
+  - title: "GraphQL"
+    presenter: "Chris Howe Jones"
+    date: "20180301"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052 Willow"
+  - title: "Docker/Gitlab/Security"
+    presenter: "Peter Grainger"
+    date: "20180221"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9052 Willow"
   - title: "Secure Coding: Cross-site scripting"
     presenter: "Robin Sillem"
     date: "20180207"
