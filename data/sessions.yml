@@ -20,6 +20,13 @@ sessions:
       start: "12:00"
       end: "13:00"
     location: "BPV9052 Willow"
+  - title: "Google Analytics"
+    presenter: "Catherine Hope"
+    date: "20180302"
+    time:
+      start: "12:30"
+      end: "13:30"
+    location: "BPV9051 Redwood"
   - title: "GraphQL"
     presenter: "Chris Howe Jones"
     date: "20180301"
