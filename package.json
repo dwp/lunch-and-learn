@@ -16,7 +16,7 @@
     "@dwp/commitlint-config-base": "1.0.0",
     "husky": "0.14.3",
     "lint-staged": "^6.0.0",
-    "nsp": "^3.1.0",
+    "nsp": "3.2.1",
     "snyk": "^1.64.0"
   },
   "repository": {
