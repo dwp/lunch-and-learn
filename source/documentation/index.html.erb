@@ -1,5 +1,5 @@
 <% today = Date.today.strftime('%Y%m%d') %>
-<% current = '' %>
+<% current = [] %>
 <% upcoming = [] %>
 <% previous = [] %>
 
@@ -11,7 +11,7 @@ The aim of this directory is to provide information on upcoming, and previous, l
   <% sessionDate = Date.parse(session.date).strftime('%Y%m%d') %>
 
   <% if today == sessionDate %>
-    <% current = session %>
+    <% current.push(session) %>
   <% end %>
 
   <% if today < sessionDate %>
@@ -23,15 +23,22 @@ The aim of this directory is to provide information on upcoming, and previous, l
   <% end %>
 <% end %>
 
-<% if current != '' %>
+<% if !current.empty? %>
   <section class="c-current-session">
-    <h2 id="todays-session" class="c-current-session__title">Today's Session</h2>
+    <h2 id="todays-session" class="c-current-session__title">
+      Today's Session<% if current.length > 1 %>s<% end %>
+    </h2>
+
+<div>
+  <% current.each do |session| %>
     <p>
-      <%= current.title %><br>
-      <%= current.presenter %><br>
-      <%= current.time.start %> - <%= current.time.end %><br>
-      <%= current.location %>
+      <%= session.title %><br>
+      <%= session.presenter %><br>
+      <%= session.time.start %> - <%= session.time.end %><br>
+      <%= session.location %>
     </p>
+  <% end %>
+</div>
   </section>
 <% end %>
 
