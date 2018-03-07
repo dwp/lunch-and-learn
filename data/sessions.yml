@@ -18,7 +18,7 @@ sessions:
     date: "20180316"
     time:
       start: "12:30"
-      end: "13:30"
+      end: "13:00"
     location: "BPV9051 Maple"
   - title: "General Data Protection Regulation"
     presenter: "Michael Bell"
@@ -32,7 +32,7 @@ sessions:
     date: "20180307"
     time:
       start: "13:00"
-      end: "14:00"
+      end: "13:30"
     location: "BPV9052 Willow"
   - title: "GraphQL"
     presenter: "Chris Howe Jones"
