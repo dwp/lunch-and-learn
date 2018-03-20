@@ -16,6 +16,7 @@ test:
     - master
 
 pages:
+  stage: deploy
   tags:
     - docker
   script:
