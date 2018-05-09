@@ -17,7 +17,7 @@
     "husky": "0.14.3",
     "lint-staged": "7.0.5",
     "nsp": "3.2.1",
-    "snyk": "1.76.0"
+    "snyk": "1.80.0"
   },
   "repository": {
     "type": "git",
