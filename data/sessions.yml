@@ -1,4 +1,11 @@
 sessions:
+  - title: "How Government Works"
+    presenter: "Raman Dhaliwal"
+    date: "20180515"
+    time:
+      start: "12:00"
+      end: "13:00"
+    location: "BPV9051 Redwood"
   - title: "Islam and Government Services"
     presenter: "Amina Vora"
     date: "20180418"
