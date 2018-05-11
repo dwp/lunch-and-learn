@@ -1,3 +1,3 @@
 {
-  "package.json": ["security:outdated", "security:nsp"]
+  "package.json": ["npm run security:outdated", "npm run security:nsp"]
 }
