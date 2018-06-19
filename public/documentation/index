@@ -1,0 +1,74 @@
+<h1 id="lunch-and-learn-directory">Lunch and Learn Directory</h1>
+<p>The aim of this directory is to provide information on upcoming, and past, lunch and learn sessions. This will be as up to date as possible, but we cannot guarantee it.</p>
+<h2 id="upcoming">Upcoming</h2>
+<p>This section lists upcoming lunch and learn sessions.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Subject</th>
+      <th scope="col">By</th>
+      <th class="numeric" scope="col">When</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Service Workers</th>
+      <td>Mike Shaw</td>
+      <td class="numeric">12/01/2018<br>12:00 - 13:00</td>
+      <td>BPV, Redwood</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="previous">Previous</h2>
+<p>This section lists previous lunch and learn sessions. Where possible we will include links to resources, provided by the presenter.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Subject</th>
+      <th scope="col">By</th>
+      <th class="numeric" scope="col">When</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Clojure</th>
+      <td>Chris Howe-Jones</td>
+      <td class="numeric">20/12/2017<br>12:00 - 13:00</td>
+      <td>BPV9052 Cypress</td>
+    </tr>
+    <tr>
+      <th scope="row">Secure Coding: Injection</th>
+      <td>Robin Sillem</td>
+      <td class="numeric">13/12/2017<br>12:00 - 13:00</td>
+      <td>Academy Classroom 2, BPV9</td>
+    </tr>
+    <tr>
+      <th scope="row">Blockchain</th>
+      <td>Alex Stanhope</td>
+      <td class="numeric">06/12/2017<br>12:00 - 13:00</td>
+      <td>BPV9052 Willow</td>
+    </tr>
+    <tr>
+      <th scope="row">Scaling Scrum</th>
+      <td>Stephen Moretti</td>
+      <td class="numeric">22/11/2017<br>12:00 - 13:00</td>
+      <td>BPV9052</td>
+    </tr>
+    <tr>
+      <th scope="row">Security: SSL and Akamai</th>
+      <td>Aswini Dasika</td>
+      <td class="numeric">22/11/2017<br>12:00 - 13:00</td>
+      <td>BPV9052 Cedar</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="get-notified">Get Notified</h2>
+<p>If you wish to be notified of new lunch and learn sessions, the best way at the moment is to watch the repo for this site for changes.</p>
+<h2 id="submit-an-idea">Submit an idea</h2><h3 id="i-want-to-present-something">I want to present something</h3>
+<p>If you wish to submit an idea for a lunch and learn, please contact Robin Sillem on Slack or by email.</p>
+<h3 id="i-have-something-i-39-d-like-to-learn">I have something I&rsquo;d like to learn</h3>
+<p>No problem! Contact Robin Sillem, on Slack or by email, with what you&rsquo;d like to learn about. We&rsquo;ll put out a call for anyone who could present on that topic.</p>
