@@ -1,10 +1,6 @@
 # Lunch and Learns Site
 
-[![build status](https://gitlab.itsshared.net/engineering-community/lunch-and-learn/badges/master/build.svg)](https://gitlab.itsshared.net/engineering-community/lunch-and-learn/commits/master)
-
 A site, built using Middleman, to provide information on upcoming, and past, Lunch and Learn sessions.
-
-https://engineering-community.pages.itsshared.net/lunch-and-learn/
 
 Currently under active development.
 
